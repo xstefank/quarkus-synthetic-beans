@@ -1,4 +1,4 @@
-package org.acme.beans.extension.runtime.beans;
+package org.acme.beans.extension.runtime;
 
 public interface ExtensionBean {
     String hello();

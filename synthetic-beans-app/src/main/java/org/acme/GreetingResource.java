@@ -6,7 +6,7 @@ import jakarta.ws.rs.Path;
 import jakarta.ws.rs.Produces;
 import jakarta.ws.rs.core.MediaType;
 import org.acme.beans.MyCustomBean;
-import org.acme.beans.extension.runtime.beans.ExtensionBean;
+import org.acme.beans.extension.runtime.ExtensionBean;
 
 @Path("/hello")
 public class GreetingResource {
