@@ -1,0 +1,45 @@
+= Quarkus synthetic beans example
+
+This project demonstrates very simple example of you can create synthetic beans with Quarkus. Both manually from user perspective with CDI 4 build compatible extensions and also in a custom Quarkus extension.
+
+== Building and running
+
+1. Install the extension to your local maven repository:
++
+[source,bash]
+----
+cd beans-extensions
+mvn clean install
+----
+
+2. Run the main application (either in Dev mode or JAR):
++
+[source,bash]
+----
+cd synthetic-beans-app
+./mvnw quarkus:dev
+----
++
+Or:
++
+[source,bash]
+----
+cd synthetic-beans-app
+./mvnw clean package
+java -jar target/quarkus-app/quarkus-run.jar
+----
+
+3. After your application is running, you can call and verify the functionality with:
++
+[source,bash]
+----
+curl localhost:8080/hello
+----
++
+And you will see the following output in the application:
++
+[source,bash]
+----
+Hello from Synthetic custom bean
+Hello from synthetic extension bean
+----
