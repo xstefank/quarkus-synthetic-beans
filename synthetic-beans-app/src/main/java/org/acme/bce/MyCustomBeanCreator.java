@@ -8,6 +8,6 @@ class MyCustomBeanCreator implements SyntheticBeanCreator<MyCustomBeanImpl> {
 
     @Override
     public MyCustomBeanImpl create(Instance lookup, Parameters params) {
-        return new MyCustomBeanImpl("Synthetic custom bean");
+        return new MyCustomBeanImpl("Synthetic custom bean", 42, 42.0);
     }
 }
